@@ -36,7 +36,7 @@ app.use(express.json());
 app.post('/shorten', async (req, res) => {
   const { longUrl } = req.body;
   const shortCode = shortid.generate();
-  const shortUrl = `https://your-render-domain.onrender.com/${shortCode}`;
+  const shortUrl = `https://short-link-r2y3.onrender.com/${shortCode}`;
 
   try {
     await Url.create({ longUrl, shortCode });
